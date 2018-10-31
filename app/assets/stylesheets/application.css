@@ -43,3 +43,17 @@ footer {
   font-weight: bold;
   letter-spacing: 0.15em;
 }
+
+rsttop-search__pref-list {
+}
+
+ul.rsttop-search__pref-list {
+  font-size: 0;
+}
+
+li.rsttop-search__pref-list-item {
+  /*background-color: #222222;*/
+  display: inline-block;
+  font-size: 12px;
+  width: 6%;
+}  

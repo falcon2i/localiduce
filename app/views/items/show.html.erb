@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-xs-6">
+  <table class="table table-bordered">
+    <tr>
+      <th>id</th>
+      <td><%= @item.id %></td>
+    </tr>
+    <tr>
+      <th>アイテム名称</th>
+      <td><%= @item.name %></td>
+    </tr>
+    <tr>
+      <th>場所</th>
+      <td><%= @item.area %></td>
+    </tr>
+    <tr>
+      <th>説明</th>
+      <td><%= @item.content %></td>
+    </tr>
+    <tr>
+      <th>写真</th>
+      <td><%= image_tag(@item.picture.thumb.url) if @item.picture.present? %></td>
+    </tr>
+  </table>
+  <%= link_to '編集', edit_item_path(@item), class: "btn btn-primary" %>
+
+  </div>
+</div>

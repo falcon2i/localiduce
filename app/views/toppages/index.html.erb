@@ -11,4 +11,183 @@
   </div>
 <% end %>
 
-<p>テスト</p>
+<h3>都道府県から探す</h3>
+
+<dl>
+<dt class="rsttop-search__pref-title">北海道・東北</dt>
+<dd class="rsttop-search__pref-list-wrap">
+  <ul class="rsttop-search__pref-list">
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '北海道', items_path("北海道") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '青森', items_path("青森県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '秋田', items_path("秋田県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '山形', items_path("山形県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '岩手', items_path("岩手県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '宮城', items_path("宮城県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '福島', items_path("福島県") %>
+    </li>
+  </ul>
+</dd>
+
+<dt class="rsttop-search__pref-title">関東</dt>
+<dd class="rsttop-search__pref-list-wrap">
+  <ul class="rsttop-search__pref-list">
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '東京', items_path("東京都") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '神奈川', items_path("神奈川県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '埼玉', items_path("埼玉県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '千葉', items_path("千葉県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '栃木', items_path("栃木県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '茨城', items_path("茨城県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '群馬', items_path("群馬県") %>
+    </li>
+  </ul>  
+</dd>
+
+<dt class="rsttop-search__pref-title">中部</dt>
+<dd class="rsttop-search__pref-list-wrap">
+  <ul class="rsttop-search__pref-list">
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '愛知', items_path("愛知県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '岐阜', items_path("岐阜県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '静岡', items_path("静岡県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '三重', items_path("三重県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '新潟', items_path("新潟県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '山梨', items_path("山梨県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '長野', items_path("長野県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '石川', items_path("石川県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '富山', items_path("富山県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '福井', items_path("福井県") %>
+    </li>
+  </ul>  
+</dd>
+
+<dt class="rsttop-search__pref-title">関西</dt>
+<dd class="rsttop-search__pref-list-wrap">
+  <ul class="rsttop-search__pref-list">
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '大阪', items_path("大阪府") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '兵庫', items_path("兵庫県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '京都', items_path("京都府") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '滋賀', items_path("滋賀県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '奈良', items_path("奈良県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '和歌山', items_path("和歌山県") %>
+    </li>
+  </ul>  
+</dd>
+
+<dt class="rsttop-search__pref-title">中国・四国</dt>
+<dd class="rsttop-search__pref-list-wrap">
+  <ul class="rsttop-search__pref-list">
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '岡山', items_path("岡山県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '広島', items_path("広島県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '鳥取', items_path("鳥取県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '島根', items_path("島根県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '山口', items_path("山口県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '香川', items_path("香川県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '徳島', items_path("徳島県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '愛媛', items_path("愛媛県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '高知', items_path("高知県") %>
+    </li>
+  </ul>  
+</dd>
+
+<dt class="rsttop-search__pref-title">九州・沖縄</dt>
+<dd class="rsttop-search__pref-list-wrap">
+  <ul class="rsttop-search__pref-list">
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '福岡', items_path("福岡県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '佐賀', items_path("佐賀県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '長崎', items_path("長崎県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '熊本', items_path("熊本県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '大分', items_path("大分県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '宮崎', items_path("宮崎県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '鹿児島', items_path("鹿児島県") %>
+    </li>
+    <li class="rsttop-search__pref-list-item">
+      <%= link_to '沖縄', items_path("沖縄県") %>
+    </li>
+  </ul>  
+</dd>
+</dl>

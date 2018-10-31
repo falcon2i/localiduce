@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-xs-6">
+    <%= form_for(item) do |f| %>
+      <% if item.errors.any? %>
+        <div id="error_explanation">
+          <ul>
+            <% item.errors.full_messages.each do |message| %>
+              <li><%= item %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <%= f.label :name, 'アイテム名称' %>
+        <%= f.text_field :name, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :area, '場所' %>
+        <%= f.collection_select :area, JpPrefecture::Prefecture.all, :name, :name %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.label :content, '説明' %>
+        <%= f.text_field :content, class: 'form-control' %>
+      </div>
+      
+      <div class="form-group">
+        <%= f.label :picture, '写真' %><br>
+        <%= f.file_field :picture %>
+      </div>
+
+      <%= f.submit '投稿', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
